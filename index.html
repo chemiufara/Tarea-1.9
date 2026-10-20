@@ -170,6 +170,37 @@ y method indica como se envian. -->
                 <input type="month" id="mes" name="mes">
             </p>
 
+            <p>
+                <label for="modulos">Módulos</label>
+
+                <!-- select crea una lista de opciones.
+                multiple permite seleccionar varias a la vez.
+                optgroup sirve para agrupar las opciones.
+                label pone un nombre a cada grupo.
+                option crea cada opcion de la lista.
+                selected deja una opcion marcada por defecto. -->
+                <select id="modulos" name="modulos" multiple>
+            
+                    <optgroup label="Programación y desarrollo">
+                        <option value="programacion">Programación</option>
+                        <option value="lenguajes">Lenguajes de marcas</option>
+                        <option value="entornos">Entornos de desarrollo</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="comentarios">Comentarios</label>
+            
+            <!-- textarea sirve para escribir textos largos.
+            rows indica las filas que se muestran
+            y cols el ancho aproximado del campo. -->
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40">
+            
+            </textarea>
+            </p>
+
+
         </fieldset>
         </form>
 
