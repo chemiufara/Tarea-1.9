@@ -84,7 +84,50 @@ y method indica como se envian. -->
         </p>
         </fieldset>
 
-</form>
+        <!-- Creamos otro grupo para las preferencias. -->
+        <fieldset>
+            <legend>Preferencias</legend>
+
+        <p>Selecciona tu turno:</p>
+
+        <!-- radio permite elegir una sola opcion.
+        Los que tienen el mismo name forman un grupo. 
+        value indica el valor que se envia al seleccionar. -->
+            <p>
+                <input type="radio" id="manana" name="turno" value="manana">
+                <label for="manana">Mañana</label>
+            </p>
+
+            <p>
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+            </p>
+    
+            <p>Selecciona tus intereses:</p>
+
+            <!-- checkbox permite marcar varias opciones.
+            Aunque tengan el mismo name, podemos elegir mas de una casilla al mismo tiempo. -->
+        
+            <p>
+                <input type="checkbox" id="programacion"
+                name="intereses" value="programacion">
+                <label for="programacion">Programación</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="hardware"
+                name="intereses" value="hardware">
+                <label for="hardware">Hardware</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="videojuegos"
+                name="intereses" value="videojuegos">
+                <label for="videojuegos">Videojuegos</label>
+            </p>
+
+        </fieldset>
+        </form>
 
 </body>
 </html>
