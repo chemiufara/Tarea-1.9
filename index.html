@@ -126,6 +126,50 @@ y method indica como se envian. -->
                 <label for="videojuegos">Videojuegos</label>
             </p>
 
+            <p>
+                <label for="horas">Horas de estudios</label>
+
+                <!-- number sirve para introducir numeros.
+                min indica el valor minimo, max el maximo
+                y step de cuanto en cuanto aumenta. -->
+                <input type="number" id="horas" name="horas" min="0" max="10" step="2">
+            </p>
+
+            <p>
+                <label for="nivel">Nivel</label>
+
+                <!-- range crea una barra que podemos mover para elegir un numero entre dos valores. -->
+                <input type="range" id="nivel" name="nivel" min="1" max="10">
+            </p>
+
+            <p>
+                <label for="color">Color favorito</label>
+
+                <!-- color permite elegir un color usando el selector del navegador. -->
+                <input type="color" id="color" name="color">
+            </p>
+
+            <p>
+                <label for="hora">Hora</label>
+
+                <!-- time sirve para seleccionar una hora -->
+                <input type="time" id="hora" name="hora">
+            </p>
+
+            <p>
+                <label for="semana">Semana</label>
+
+                <!-- week permite elegir una semana del año -->
+                <input type="week" id="semana" name="semana">
+            </p>
+
+            <p>
+                <label for="mes">Mes</label>
+
+                <!-- month permite elegir un mes y un año -->
+                <input type="month" id="mes" name="mes">
+            </p>
+
         </fieldset>
         </form>
 
