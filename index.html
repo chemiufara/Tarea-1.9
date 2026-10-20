@@ -7,14 +7,57 @@
     <title>Tarea 1.9 - Formularios HTML</title>
 </head>
 <body>
+
 <!--form crea un formulario.
 action indica a donde se envian los datos
 y method indica como se envian. -->
 <form action="index.html" method="get">
+    
     <!-- fieldset agrupa datos que pertenecen al mismo apartado. -->
     <fieldset>
         <legend>Datos personales by Chema</legend>
+
+        <p> 
+            <!-- label pone un nombre al campo.
+    for lo relaciona con el id del input. -->
+    <label for="nombre">Nombre:</label>
+        <!-- input sirve para introducir datos.
+        text permite escribir texto.
+        id identifica el campo y name lo envía.
+        placeholder muestra una pista.
+        required hace que sea obligatorio.
+        autofocus coloca el cursor al abrir la pagina.
+        size indica el ancho del campo.
+        maxlength limita los caracteres que podemos escribir. -->
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required autofocus size="30" maxlength="40">
+        </p>
+        
+        <p>
+            <label for="contrasena">Contraseña:</label>
+            <!-- password oculta lo que escribimos.
+            minlength exige un minimo de 8 caracteres
+            si se rellena el campo. -->
+            <input type="password" id="contrasena" name="contrasena" minlength="8">
+        </p>
+
+        <p>
+            <label for="correo">Correo electronico</label>
+            <!-- email comprueba que el texto tiene
+            formato de correo electronico -->
+            <input type="email" id="correo" name="correo"  required>
+        </p>
+
+        <p> 
+            <label for="telefono">Telefono</label>
+            <!-- tel permite introducir un telefono.
+            pattern sirve para indicar el formato,
+            de 9 numeros. -->
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+        </p>
+        
     </fieldset>
+
 </form>
+
 </body>
 </html>
