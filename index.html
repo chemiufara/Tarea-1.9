@@ -194,7 +194,7 @@ y method indica como se envian. -->
             
             <!-- textarea sirve para escribir textos largos.
             rows indica las filas que se muestran
-            y cols el ancho aproximado del campo. -->
+            y cols el ancho del campo. -->
             <textarea id="comentarios" name="comentarios" rows="4" cols="40">
             
             </textarea>
@@ -202,6 +202,29 @@ y method indica como se envian. -->
 
 
         </fieldset>
+
+            <!-- Estos botones permiten enviar, limpiar o realizar otras acciones dentro del formulario.
+            submit envia los datos y reset limpia los campos.
+            button no hace nada si no le damos una funcion. -->
+        
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+                <input type="button" value="Boton normal">
+            </p>
+
+            <p>
+                <input type="image" src="boton.jpg" alt="Enviar formulario"">
+            </p>
+            
+            <!-- La etiqueta button tambien sirve para crear botones.
+            Con type indicamos que queremos que haga cada uno. -->
+            <p>
+                <button type="submit">Enviar formulario</button>
+                <button type="reset">Limpiar formulario</button>
+                <button type="button">Boton normal</button>
+            </p>
+            
         </form>
 
 </body>
