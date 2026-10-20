@@ -224,8 +224,38 @@ y method indica como se envian. -->
                 <button type="reset">Limpiar formulario</button>
                 <button type="button">Boton normal</button>
             </p>
-            
+
         </form>
 
+        <form action="https://es.wikipedia.org/wiki/Wikipedia:Portada" method="get">
+
+            <fieldset>
+                <legend>Buscador de Wikipedia</legend>
+
+                <p>
+                    <label for="busqueda">Buscar articulo</label>
+                
+                <!-- search crea un campo para realizar busquedas.
+                list conecta el campo con una lista de sugerencias.
+                name="search" es el dato que llega a Wikipedia. -->
+                
+                <input type="search" id="busqueda" name="search" list="sugerencias">
+                </p>
+                
+                <!-- datalist permite mostrar sugerencias mientras escribimos en el campo de busqueda.-->
+            
+                <datalist id="sugerencias">
+                    <option value="Formulario web">
+                    <option value="HTML">
+                    <option value="Protocolo de transferencia de hipertexto">
+                </datalist>
+
+                <p>
+                    <button type="submit">Buscar en Wikipedia</button>
+                </p>
+
+            </fieldset>
+            
+        </form>
 </body>
 </html>
