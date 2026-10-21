@@ -287,5 +287,33 @@ y method indica como se envian. -->
                 </p>
             </fieldset>
         </form>
+
+        <!-- Este formulario sirve para comprobar si nuestra pagina cumple las normas de HTML5. Los datos se envian al validador usando GET. -->
+
+        <form action="https://validator.w3.org/nu/" method="get" target="_blank">
+            <fieldset>
+                <legend>Validador HTML</legend>
+
+                <p>
+                    <label for="doc">URL de mi pagina</label>
+                    <!-- url permite introducir una direccion web.
+                    name="doc" indica al validador que pagina tiene que comprobar.
+                    value pone una direccion inicial en el campo. -->
+                    <input type="url" id="doc" name="doc" 
+                    value="https://github.com/chemiufara/Tarea-1.9">
+                </p>
+
+                <p>
+                    <!-- checkbox permite marcar una opcion.
+                    showsource indica que queremos ver el codigo.
+                    value="yes" envia esa opcion al validador. -->
+                    <input type="checkbox" id="showsource" name="showsource" value="yes">
+                    <label for="showsource">Ver el código</label>
+                </p>
+
+                <p>
+                    <button type="submit">Validar HTML</button>
+                </p>
+            </fieldset>
 </body>
 </html>
