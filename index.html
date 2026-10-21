@@ -257,5 +257,35 @@ y method indica como se envian. -->
             </fieldset>
             
         </form>
+
+        <!-- Este formulario sirve para buscar ciudades en OpenStreetMap usando el metodo GET. -->
+
+        <form action="https://www.openstreetmap.org/search" method="get">
+            <fieldset>
+                <legend>Buscador de ciudades</legend>
+                <p>
+                    <label for="ciudad">Ciudad</label>
+                    <!-- select muestra una lista de ciudades.
+                    name="query" es el dato que recibe OpenStreetMap.
+                    optgroup separa las ciudades por provincias
+                    y option indica cada ciudad con su valor. -->
+
+                    <select id="ciudad" name="query"></select>
+                        <optgroup label="Alicante">
+                            <option value="Alicante">Alicante</option>
+                            <option value="Elche">Elche</option>
+                        </optgroup>
+
+                        <optgroup label="Valencia">
+                            <option value="Valencia">Valencia</option>
+                            <option value="Gandia">Gandia</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Buscar ciudad</button>
+                </p>
+            </fieldset>
+        </form>
 </body>
 </html>
